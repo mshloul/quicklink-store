@@ -1,0 +1,284 @@
+/* إعداد الخط */
+body {
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* شريط التنقل */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3B5BA5;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #5581E4;
+}
+
+/* زر موحد */
+.btn {
+  display: inline-block;
+  background-color: #5581E4;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #3B5BA5;
+}
+
+/* قسم Hero */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  background-color: #f7f9fc;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  color: #3B5BA5;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-image img {
+  width: 320px;
+}
+
+/* الخدمات */
+.services {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.service-cards .card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.service-cards .card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.service-cards .card h3 {
+  color: #3B5BA5;
+}
+
+/* الباقات */
+.featured-plans {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.plan-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.plan-cards .card {
+  background-color: #f7f9fc;
+  border-radius: 10px;
+  padding: 25px;
+  width: 260px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.plan-cards .card.popular {
+  border: 2px solid #3B5BA5;
+  border-radius: 10px;
+  background-color: #f7f9fc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+.plan-cards .card h3 {
+  color: #3B5BA5;
+  margin-bottom: 10px;
+}
+
+/* لماذا نحن */
+.why-us {
+  background-color: #f7f9fc;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.reasons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.reason {
+  width: 200px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.reason img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+/* الشهادات */
+.testimonials {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.testimonial {
+  background-color: #f7f9fc;
+  padding: 25px;
+  width: 300px;
+  border-radius: 10px;
+  font-style: italic;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Footer */
+footer {
+  background-color: #27304F;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+form {
+  background-color: #f7f9fc;
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #3B5BA5;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.about-box {
+  background-color: #f7f9fc;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 700px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.about-box h3 {
+  color: #3B5BA5;
+  margin-top: 30px;
+}
+
+.about-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-box ul li {
+  margin: 10px 0;
+  font-size: 16px;
+}

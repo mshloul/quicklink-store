@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>اشترك الآن | QuickLink Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- شريط التنقل -->
+  <nav class="navbar">
+    <div class="logo">QuickLink Store</div>
+    <ul class="nav-links">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="products.html">الباقات</a></li>
+      <li><a href="subscribe.html">اشترك الآن</a></li>
+      <li><a href="about.html">من نحن</a></li>
+    </ul>
+  </nav>
+
+  <!-- عنوان الصفحة -->
+  <section class="section-header">
+    <h2 style="text-align: center; padding-top: 40px;">نموذج الاشتراك</h2>
+    <p style="text-align: center;">املأ المعلومات التالية لإتمام اشتراكك في الباقة المناسبة</p>
+  </section>
+
+  <!-- النموذج -->
+  <section class="form-container">
+    <form>
+      <label for="name">الاسم الكامل:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">البريد الإلكتروني:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">رقم الهاتف:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="package">اختر الباقة:</label>
+      <select id="package" name="package" required>
+        <option value="">-- اختر باقة --</option>
+        <option value="10Mbps">10Mbps</option>
+        <option value="20Mbps">20Mbps</option>
+        <option value="30Mbps">30Mbps</option>
+        <option value="50Mbps">50Mbps</option>
+        <option value="100Mbps">100Mbps</option>
+      </select>
+
+      <button type="submit" class="btn">إرسال</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 QuickLink Telecom - جميع الحقوق محفوظة</p>
+      <p>📞 0790000000 | ✉️ support@quicklink.jo</p>
+    </div>
+  </footer>
+
+</body>
+</html>
